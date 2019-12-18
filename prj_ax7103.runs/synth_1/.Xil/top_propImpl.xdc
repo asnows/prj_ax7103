@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc rfile:../../../prj_ax7103.srcs/constrs_1/new/top.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R4 [get_ports sys_clk_p]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P20 [get_ports uart_rx]
+set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N15 [get_ports uart_tx]

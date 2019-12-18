@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/ip/fifo_uart/sim/fifo_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_Baudrate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_Baudrate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

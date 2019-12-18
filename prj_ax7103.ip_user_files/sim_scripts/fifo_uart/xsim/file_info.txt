@@ -1,0 +1,2 @@
+fifo_uart.v,verilog,xil_defaultlib,../../../../prj_ax7103.srcs/sources_1/ip/fifo_uart/sim/fifo_uart.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
