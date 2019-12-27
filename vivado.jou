@@ -2,16 +2,38 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Nov  9 12:10:54 2019
-# Process ID: 36780
-# Current directory: E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36004 E:\WorkSpace\project\FPGA\prj_ax7103\prj_ax7103\prj_ax7103.xpr
-# Log file: E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/vivado.log
-# Journal file: E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103\vivado.jou
+# Start of session at: Fri Dec 27 14:23:53 2019
+# Process ID: 12624
+# Current directory: E:/WorkSpace/project/FPGA/prj_ax7103
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12512 E:\WorkSpace\project\FPGA\prj_ax7103\prj_ax7103.xpr
+# Log file: E:/WorkSpace/project/FPGA/prj_ax7103/vivado.log
+# Journal file: E:/WorkSpace/project/FPGA/prj_ax7103\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.xpr
+open_project E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.xpr
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files {E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_eth.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_oper.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_clk_gen.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_tx.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_arp.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/rx_oper.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/eth_fcs.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_ip.v E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_udp.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/axis_master.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
 open_run impl_1
-set_property IOSTANDARD DIFF_SSTL15 [get_ports [list sys_clk_p]]
-set_property IOSTANDARD DIFF_SSTL15 [get_ports [list sys_clk_p]]

@@ -3,23 +3,31 @@
     with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 
 
-****** Vivado v2018.1 (64-bit)
-  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
-  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
+INFO: [Common 17-748] XILINX_TCLAPP_REPO is set to 'D:/Xilinx/Vivado/2018.1/data/XilinxTclStore'. Refresh XilinxTclStore catalog is disabled when XILINX_TCLAPP_REPO is set.
 source top.tcl -notrace
 Command: synth_design -top top -part xc7a100tfgg484-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 30564 
+INFO: Helper process launched with PID 13804 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 447.082 ; gain = 100.207
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 450.367 ; gain = 100.410
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:19487]
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/top.v:23]
+	Parameter DST_MAC bound to: 48'b000010000101011100000000111101001010111011100101 
+	Parameter SRC_MAC bound to: 48'b000010000101011100000000111101001010111011100110 
+	Parameter ETH_TYPE bound to: 16'b0000100000000000 
+	Parameter IP_SrcAddr bound to: -1062680476 - type: integer 
+	Parameter IP_DestAddr bound to: -1062680475 - type: integer 
+	Parameter UDP_SrcPort bound to: 16'b0000011000000000 
+	Parameter UDP_DestPort bound to: 16'b0000011000000000 
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: FALSE - type: string 
 	Parameter DQS_BIAS bound to: FALSE - type: string 
@@ -27,37 +35,236 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/Xilinx/Vivado/2018.1/scrip
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:19487]
-INFO: [Synth 8-6157] synthesizing module 'uart_test' [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:26]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:29]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:30]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:34]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:35]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:36]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:37]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:38]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:94]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:95]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:96]
-INFO: [Synth 8-6157] synthesizing module 'uart_model' [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_model.v:23]
-INFO: [Synth 8-6157] synthesizing module 'uart_Baudrate' [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_Baudrate.v:25]
-	Parameter NUM bound to: 54 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_Baudrate' (2#1) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_Baudrate.v:25]
-INFO: [Synth 8-6157] synthesizing module 'fifo_uart' [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.runs/synth_1/.Xil/Vivado-37120-DESKTOP-GEE1RG6/realtime/fifo_uart_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_uart' (3#1) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.runs/synth_1/.Xil/Vivado-37120-DESKTOP-GEE1RG6/realtime/fifo_uart_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488]
+INFO: [Synth 8-6157] synthesizing module 'uart_test' [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:26]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:29]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:30]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:34]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:35]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:36]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:37]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:38]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:94]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:95]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:96]
+INFO: [Synth 8-6157] synthesizing module 'uart_model' [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_model.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_Baudrate' [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_Baudrate.v:25]
+	Parameter CLK_MHZ bound to: 200 - type: integer 
+	Parameter BAUTDRATE bound to: 115200 - type: integer 
+	Parameter NUM bound to: 868 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_Baudrate' (2#1) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_Baudrate.v:25]
+INFO: [Synth 8-6157] synthesizing module 'fifo_uart' [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.runs/synth_1/.Xil/Vivado-932-VT2OB6D7ZB52FZ0/realtime/fifo_uart_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_uart' (3#1) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.runs/synth_1/.Xil/Vivado-932-VT2OB6D7ZB52FZ0/realtime/fifo_uart_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_tx.v:23]
 	Parameter paritymode bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_tx.v:23]
-INFO: [Synth 8-6157] synthesizing module 'uart_rx' [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_rx.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_rx.v:86]
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (5#1) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_rx.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'uart_model' (6#1) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_model.v:23]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_uart_model'. This will prevent further optimization [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:115]
-INFO: [Synth 8-6155] done synthesizing module 'uart_test' (7#1) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:26]
-INFO: [Synth 8-6155] done synthesizing module 'top' (8#1) [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/top.v:23]
-WARNING: [Synth 8-3331] design top has unconnected port reset_n
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_tx.v:23]
+WARNING: [Synth 8-350] instance 'u_tx' of module 'uart_tx' requires 6 connections, but only 5 given [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_model.v:96]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_rx.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (5#1) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart_model' (6#1) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_model.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_uart_model'. This will prevent further optimization [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'uart_test' (7#1) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_test.v:26]
+INFO: [Synth 8-6157] synthesizing module 'axis_master' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/axis_master.v:1]
+	Parameter DATA_NUM bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_master' (8#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/axis_master.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mac' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac.v:1]
+	Parameter MEDIA_TYPES bound to: 1000Base - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mac_tx' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_tx.v:1]
+	Parameter MEDIA_TYPES bound to: 1000Base - type: string 
+INFO: [Synth 8-6157] synthesizing module 'tx_clk_gen' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_clk_gen.v:1]
+	Parameter MEDIA_TYPES bound to: 1000Base - type: string 
+WARNING: [Synth 8-6014] Unused sequential element dclk_count_reg was removed.  [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_clk_gen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'tx_clk_gen' (9#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tx_arp' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_arp.v:1]
+	Parameter ARP_HwType bound to: 16'b0000000000000001 
+	Parameter ARP_Proto bound to: 16'b0000100000000000 
+	Parameter ARP_HwLen bound to: 8'b00000110 
+	Parameter ARP_ProtoLen bound to: 8'b00000100 
+	Parameter STATE_IDEL bound to: 2'b00 
+	Parameter STATE_HEADER bound to: 2'b01 
+	Parameter STATE_DATA bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'tx_arp' (10#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_arp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tx_udp' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_udp.v:1]
+	Parameter STATE_IDEL bound to: 2'b00 
+	Parameter STATE_HEADER bound to: 2'b01 
+	Parameter STATE_DATA bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_udp.v:76]
+WARNING: [Synth 8-6014] Unused sequential element s_tvalid_dly_reg was removed.  [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_udp.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'tx_udp' (11#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_udp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tx_ip' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_ip.v:1]
+	Parameter STATE_IDLE bound to: 2'b00 
+	Parameter STATE_HEADER bound to: 2'b01 
+	Parameter STATE_DATA bound to: 2'b10 
+	Parameter IP_Version bound to: 4'b0100 
+	Parameter IP_HeaderLen bound to: 4'b0101 
+	Parameter IP_TOS bound to: 8'b00000000 
+	Parameter IP_ID bound to: 16'b0000000000000000 
+	Parameter IP_Flags bound to: 3'b010 
+	Parameter IP_FraOff bound to: 13'b0000000000000 
+	Parameter IP_TTL bound to: 8'b01000000 
+	Parameter IP_Protocol bound to: 8'b00010001 
+WARNING: [Synth 8-6014] Unused sequential element s_tvalid_dly_reg was removed.  [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_ip.v:68]
+WARNING: [Synth 8-6014] Unused sequential element s_tvalid_dly_reg was removed.  [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_ip.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'tx_ip' (12#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_ip.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tx_eth' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_eth.v:1]
+	Parameter STATE_IDEL bound to: 3'b000 
+	Parameter STATE_PREA bound to: 3'b001 
+	Parameter STATE_HEAD bound to: 3'b010 
+	Parameter STATE_DATA bound to: 3'b011 
+	Parameter STATE_CRC bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_eth.v:128]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_eth.v:224]
+INFO: [Synth 8-6157] synthesizing module 'eth_fcs' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/eth_fcs.v:5]
+	Parameter Tp bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'eth_fcs' (13#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/eth_fcs.v:5]
+WARNING: [Synth 8-6014] Unused sequential element s_tvalid_dly_reg was removed.  [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_eth.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'tx_eth' (14#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_eth.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tx_oper' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_oper.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:30653]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (15#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:30653]
+INFO: [Synth 8-6155] done synthesizing module 'tx_oper' (16#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_oper.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mac_tx' (17#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_tx.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac.v:75]
+INFO: [Synth 8-6157] synthesizing module 'mac_rx' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:1]
+	Parameter MEDIA_TYPES bound to: 1000Base - type: string 
+INFO: [Synth 8-6157] synthesizing module 'rx_oper' [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/rx_oper.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:21387]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (18#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:21387]
+INFO: [Synth 8-6155] done synthesizing module 'rx_oper' (19#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/rx_oper.v:1]
+WARNING: [Synth 8-3848] Net dst_mac in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:6]
+WARNING: [Synth 8-3848] Net src_mac in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:7]
+WARNING: [Synth 8-3848] Net eth_type in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:8]
+WARNING: [Synth 8-3848] Net IP_TotLen in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:9]
+WARNING: [Synth 8-3848] Net IP_SrcAddr in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:10]
+WARNING: [Synth 8-3848] Net IP_DestAddr in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:11]
+WARNING: [Synth 8-3848] Net UDP_SrcPort in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:12]
+WARNING: [Synth 8-3848] Net UDP_DestPort in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:13]
+WARNING: [Synth 8-3848] Net UDP_TotLen in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:14]
+WARNING: [Synth 8-3848] Net UDP_CheckSum in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:15]
+WARNING: [Synth 8-3848] Net m_axis_aclk in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:18]
+WARNING: [Synth 8-3848] Net m_axis_tdata in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:19]
+WARNING: [Synth 8-3848] Net m_axis_tlast in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:20]
+WARNING: [Synth 8-3848] Net m_axis_tuser in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:22]
+WARNING: [Synth 8-3848] Net m_axis_tvalid in module/entity mac_rx does not have driver. [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mac_rx' (20#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (21#1) [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/mac.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (22#1) [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[47]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[46]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[45]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[44]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[43]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[42]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[41]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[40]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[39]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[38]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[37]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[36]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[35]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[34]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[33]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[32]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[31]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[30]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[29]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[28]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[27]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[26]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[25]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[24]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[23]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[22]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[21]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[20]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[19]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[18]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[17]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[16]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[15]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[14]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[13]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[12]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[11]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[10]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[9]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[8]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[7]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[6]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[5]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[4]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[3]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[2]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[1]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port dst_mac[0]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[47]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[46]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[45]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[44]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[43]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[42]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[41]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[40]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[39]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[38]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[37]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[36]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[35]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[34]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[33]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[32]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[31]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[30]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[29]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[28]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[27]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[26]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[25]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[24]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[23]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[22]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[21]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[20]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[19]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[18]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[17]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[16]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[15]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[14]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[13]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[12]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[11]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[10]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[9]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[8]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[7]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[6]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[5]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[4]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[3]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[2]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[1]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port src_mac[0]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port eth_type[15]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port eth_type[14]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port eth_type[13]
+WARNING: [Synth 8-3331] design mac_rx has unconnected port eth_type[12]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 501.992 ; gain = 155.117
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 505.121 ; gain = 155.164
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -70,59 +277,132 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 501.992 ; gain = 155.117
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 505.121 ; gain = 155.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 501.992 ; gain = 155.117
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 505.121 ; gain = 155.164
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a100tfgg484-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [f:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/ip/fifo_uart/fifo_uart/fifo_uart_in_context.xdc] for cell 'U_uart_test/U_uart_model/uart_sendBuff'
-Finished Parsing XDC File [f:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/ip/fifo_uart/fifo_uart/fifo_uart_in_context.xdc] for cell 'U_uart_test/U_uart_model/uart_sendBuff'
-Parsing XDC File [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc]
-Finished Parsing XDC File [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/ip/fifo_uart/fifo_uart/fifo_uart_in_context.xdc] for cell 'U_uart_test/U_uart_model/uart_sendBuff'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/ip/fifo_uart/fifo_uart/fifo_uart_in_context.xdc] for cell 'U_uart_test/U_uart_model/uart_sendBuff'
+Parsing XDC File [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'e1_mdc'. [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'e1_mdio'. [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'e1_reset'. [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'e1_mdc'. [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'e1_mdio'. [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'e1_reset'. [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc:45]
+Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 849.055 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 875.586 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'U_uart_test/U_uart_model/uart_sendBuff' at clock pin 'wr_clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 849.055 ; gain = 502.180
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 875.586 ; gain = 525.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 849.055 ; gain = 502.180
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 875.586 ; gain = 525.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U_uart_test/U_uart_model/uart_sendBuff. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 849.055 ; gain = 502.180
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 875.586 ; gain = 525.629
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "uart_clk_reg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "idle_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "send" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tx_reg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "parit" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "rx_flg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "data_reg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "parit" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "err_reg" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'idle_reg_reg' [F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_tx.v:43]
+INFO: [Synth 8-5545] ROM "tuser_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tlast_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tx_arp'
+INFO: [Synth 8-5546] ROM "m_tlast_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_tvalid_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_tdata_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_tuser_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "arp_opcode_dly" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tx_udp'
+INFO: [Synth 8-5546] ROM "m_tvalid_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_tready_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_tdata_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_tuser_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tx_ip'
+INFO: [Synth 8-5546] ROM "m_tdata_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_tuser_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_tready_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tx_eth'
+INFO: [Synth 8-5546] ROM "m_tdata_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_tdata_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_tvalid_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fcs_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fcs_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fcs_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tready_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fcs_data_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "counts" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_tdata_reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'idle_reg_reg' [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_tx.v:44]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDEL |                                0 |                               00
+            STATE_HEADER |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'tx_arp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDEL |                              001 |                               00
+            STATE_HEADER |                              010 |                               01
+              STATE_DATA |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'tx_udp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                              001 |                               00
+            STATE_HEADER |                              010 |                               01
+              STATE_DATA |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'tx_ip'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDEL |                            00001 |                              000
+              STATE_PREA |                            00010 |                              001
+              STATE_HEAD |                            00100 |                              010
+              STATE_DATA |                            01000 |                              011
+               STATE_CRC |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'tx_eth'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 849.055 ; gain = 502.180
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 875.586 ; gain = 525.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -135,20 +415,47 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      8 Bit       Adders := 2     
-	   2 Input      6 Bit       Adders := 1     
+	   6 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 6     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 16    
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
 +---Registers : 
-	                8 Bit    Registers := 8     
-	                1 Bit    Registers := 21    
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 7     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 18    
+	                1 Bit    Registers := 45    
 +---Muxes : 
 	  12 Input      8 Bit        Muxes := 1     
-	  13 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
-	  13 Input      1 Bit        Muxes := 2     
-	  12 Input      1 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 8     
+	   3 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 54    
+	  12 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 9     
+	  29 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 14    
+	  23 Input      1 Bit        Muxes := 5     
+	  16 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -159,9 +466,9 @@ Hierarchical RTL Component report
 Module uart_Baudrate 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      6 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
@@ -175,10 +482,8 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 5     
 +---Muxes : 
-	  13 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-	  13 Input      1 Bit        Muxes := 2     
-	  12 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  12 Input      1 Bit        Muxes := 2     
 Module uart_rx 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -202,6 +507,100 @@ Detailed RTL Component Info :
 +---Registers : 
 	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
+Module axis_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module tx_arp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 20    
+	  29 Input      1 Bit        Muxes := 6     
+Module tx_udp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  11 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 7     
+Module tx_ip 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	  23 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 7     
+Module eth_fcs 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module tx_eth 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	  16 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 9     
+Module rx_oper 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -218,19 +617,184 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element u_tx/dvalid_reg_reg was removed.  [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.srcs/sources_1/new/uart_tx.v:46]
 INFO: [Synth 8-5546] ROM "u_Baudrate/uart_clk_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_tx/send" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "u_tx/idle_reg" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_tx/tx_reg" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_tx/parit" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "u_rx/rx_flg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "u_rx/err_reg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "u_rx/parit" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3331] design top has unconnected port reset_n
-INFO: [Synth 8-3886] merging instance 'U_uart_test/U_uart_model/u_Baudrate/counter_reg[6]' (FDR) to 'U_uart_test/U_uart_model/u_Baudrate/counter_reg[7]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_uart_test/U_uart_model/\u_Baudrate/counter_reg[7] )
-WARNING: [Synth 8-3332] Sequential element (u_Baudrate/counter_reg[7]) is unused and will be removed from module uart_model.
+WARNING: [Synth 8-6014] Unused sequential element mac_I/mac_rx_I/rx_oper_I/tvalid_reg_reg was removed.  [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/rx_oper.v:19]
+WARNING: [Synth 8-6014] Unused sequential element mac_I/mac_rx_I/rx_oper_I/tdata_reg_reg was removed.  [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/rx_oper.v:18]
+INFO: [Synth 8-5545] ROM "axis_master_I/tlast_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "axis_master_I/tuser_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mac_I/mac_tx_I/tx_arp_I/m_tlast_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mac_I/mac_tx_I/tx_eth_I/m_tdata_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_udp_I/s_tuser_dly_reg' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tuser_dly_reg'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[30]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[31]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[29]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[28]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[27]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[26]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[25]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[24]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[23]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[22]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[21]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[20]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[19]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[18]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[17]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[16]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[15]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[14]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[13]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'axis_master_I/nums_reg[12]' (FDSE) to 'axis_master_I/nums_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_udp_I/s_tlast_dly_reg' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tlast_dly_reg'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[20]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[28]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[4]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[12]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[20]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[28]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[36]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[44]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[4]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[12]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[4]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[12]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[20]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[28]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[4]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[12]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[20]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[28]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[36]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[44]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[4]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[12]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_ip_I/s_tdata_dly_reg[4]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_udp_I/s_tdata_dly_reg[4]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_udp_I/s_tdata_dly_reg[12]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_ip_I/s_tdata_dly_reg[12]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[16]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[24]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[0]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[8]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[16]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[24]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[32]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[40]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[0]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[8]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[0]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[8]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[16]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[24]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[0]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[8]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[16]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[24]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[32]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[40]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[0]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[8]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_ip_I/s_tdata_dly_reg[0]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_udp_I/s_tdata_dly_reg[0]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_udp_I/s_tdata_dly_reg[8]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_ip_I/s_tdata_dly_reg[8]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[21]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[29]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[5]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[13]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[21]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[29]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[37]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcMac_dly_reg[45]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[5]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[13]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[5]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[13]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[21]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destIP_dly_reg[29]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[5]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[13]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[21]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[29]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[37]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_destMac_dly_reg[45]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[5]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[13]' (FDE) to 'mac_I/mac_tx_I/tx_arp_I/arp_opcode_dly_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_ip_I/s_tdata_dly_reg[5]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_udp_I/s_tdata_dly_reg[5]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_udp_I/s_tdata_dly_reg[13]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[13]'
+INFO: [Synth 8-3886] merging instance 'mac_I/mac_tx_I/tx_ip_I/s_tdata_dly_reg[13]' (FD) to 'mac_I/mac_tx_I/tx_eth_I/s_tdata_dly_reg[13]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (axis_master_I/tlast_reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (axis_master_I/tvaild_reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_arp_I/m_tvalid_reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tready_reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tuser_reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tvalid_reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tready_reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/m_tuser_reg_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/s_tdata_reg_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tdata_reg_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tdata_reg_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tdata_reg_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tdata_reg_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tdata_reg_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tdata_reg_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tdata_reg_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_udp_I/m_tdata_reg_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/s_tdata_reg_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/m_tdata_reg_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/m_tdata_reg_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/m_tdata_reg_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/m_tdata_reg_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/m_tdata_reg_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/m_tdata_reg_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/m_tdata_reg_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_ip_I/m_tdata_reg_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mac_I/mac_tx_I/tx_arp_I/arp_srcIP_dly_reg[3]) is unused and will be removed from module top.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U_uart_test/U_uart_model/\u_Baudrate/counter_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (u_Baudrate/counter_reg[10]) is unused and will be removed from module uart_model.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 849.055 ; gain = 502.180
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 875.586 ; gain = 525.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,13 +806,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 849.055 ; gain = 502.180
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 875.586 ; gain = 525.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 849.055 ; gain = 502.180
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 878.074 ; gain = 528.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -259,8 +823,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\mac_I/mac_tx_I/tx_ip_I/s_tuser_dly_reg__0 ) from module (top) as it is equivalent to (\mac_I/mac_tx_I/tx_ip_I/s_tuser_dly_reg ) and driving same net [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_ip.v:67]
+INFO: [Synth 8-4765] Removing register instance (\mac_I/mac_tx_I/tx_ip_I/s_tlast_dly_reg__0 ) from module (top) as it is equivalent to (\mac_I/mac_tx_I/tx_ip_I/s_tlast_dly_reg ) and driving same net [E:/WorkSpace/project/FPGA/prj_modelsim/prj_modelsim/src/Ethernet/tx_ip.v:59]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 857.438 ; gain = 510.563
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 882.246 ; gain = 532.289
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -284,7 +850,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 857.438 ; gain = 510.563
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 882.246 ; gain = 532.289
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -297,7 +863,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 857.438 ; gain = 510.563
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 882.246 ; gain = 532.289
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -309,25 +875,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 857.438 ; gain = 510.563
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 882.246 ; gain = 532.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 857.438 ; gain = 510.563
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 882.246 ; gain = 532.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 857.438 ; gain = 510.563
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 882.246 ; gain = 532.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 857.438 ; gain = 510.563
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 882.246 ; gain = 532.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -345,40 +911,54 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |fifo_uart |     1|
-|2     |BUFG      |     2|
-|3     |LUT1      |     6|
-|4     |LUT2      |    12|
-|5     |LUT3      |     8|
-|6     |LUT4      |    18|
-|7     |LUT5      |    12|
-|8     |LUT6      |    18|
-|9     |FDRE      |    81|
-|10    |FDSE      |     2|
-|11    |LDC       |     1|
-|12    |IBUF      |     1|
-|13    |IBUFDS    |     1|
-|14    |OBUF      |     1|
+|2     |BUFG      |     3|
+|3     |IDDR      |     5|
+|4     |LUT1      |    12|
+|5     |LUT2      |    29|
+|6     |LUT3      |    36|
+|7     |LUT4      |    45|
+|8     |LUT5      |    54|
+|9     |LUT6      |   101|
+|10    |ODDR      |     5|
+|11    |FDPE      |    32|
+|12    |FDRE      |   205|
+|13    |FDSE      |    14|
+|14    |LDC       |     1|
+|15    |IBUF      |     8|
+|16    |IBUFDS    |     1|
+|17    |OBUF      |     7|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+-----------------+--------------+------+
-|      |Instance         |Module        |Cells |
-+------+-----------------+--------------+------+
-|1     |top              |              |   174|
-|2     |  U_uart_test    |uart_test     |   170|
-|3     |    U_uart_model |uart_model    |   150|
-|4     |      u_Baudrate |uart_Baudrate |    16|
-|5     |      u_rx       |uart_rx       |    57|
-|6     |      u_tx       |uart_tx       |    51|
-+------+-----------------+--------------+------+
++------+------------------+--------------+------+
+|      |Instance          |Module        |Cells |
++------+------------------+--------------+------+
+|1     |top               |              |   569|
+|2     |  U_uart_test     |uart_test     |   173|
+|3     |    U_uart_model  |uart_model    |   153|
+|4     |      u_Baudrate  |uart_Baudrate |    26|
+|5     |      u_rx        |uart_rx       |    55|
+|6     |      u_tx        |uart_tx       |    46|
+|7     |  axis_master_I   |axis_master   |    33|
+|8     |  mac_I           |mac           |   344|
+|9     |    mac_rx_I      |mac_rx        |     5|
+|10    |      rx_oper_I   |rx_oper       |     5|
+|11    |    mac_tx_I      |mac_tx        |   339|
+|12    |      tx_arp_I    |tx_arp        |    50|
+|13    |      tx_eth_I    |tx_eth        |   228|
+|14    |        eth_fcs_I |eth_fcs       |    81|
+|15    |      tx_ip_I     |tx_ip         |    28|
+|16    |      tx_oper_I   |tx_oper       |     5|
+|17    |      tx_udp_I    |tx_udp        |    28|
++------+------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 857.438 ; gain = 510.563
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 882.246 ; gain = 532.289
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 857.438 ; gain = 163.500
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 857.438 ; gain = 510.563
+Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 882.246 ; gain = 161.824
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 882.246 ; gain = 532.289
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -387,10 +967,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+235 Infos, 193 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 859.305 ; gain = 523.902
-INFO: [Common 17-1381] The checkpoint 'F:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 882.246 ; gain = 543.762
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 859.305 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 30 21:50:20 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 882.246 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 27 15:01:04 2019...

@@ -12,6 +12,44 @@ set_property PACKAGE_PIN N15 [get_ports uart_tx]
 
 
 
+set_property PACKAGE_PIN T6 [get_ports reset_n]
+set_property IOSTANDARD LVCMOS15 [get_ports reset_n]
+
+
+#########################ethernet######################
+create_clock -period 8.000 [get_ports rgmii1_rxc]
+set_property IOSTANDARD LVCMOS33 [get_ports {rgmii1_rxd[*]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {rgmii1_txd[*]}]
+set_property SLEW FAST [get_ports {rgmii1_txd[*]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports e1_mdc]
+set_property IOSTANDARD LVCMOS33 [get_ports e1_mdio]
+set_property IOSTANDARD LVCMOS33 [get_ports e1_reset]
+set_property IOSTANDARD LVCMOS33 [get_ports rgmii1_rxc]
+set_property IOSTANDARD LVCMOS33 [get_ports rgmii1_rxctl]
+set_property IOSTANDARD LVCMOS33 [get_ports rgmii1_txc]
+set_property IOSTANDARD LVCMOS33 [get_ports rgmii1_txctl]
+set_property SLEW FAST [get_ports rgmii1_txc]
+set_property SLEW FAST [get_ports rgmii1_txctl]
+
+set_property PACKAGE_PIN C19 [get_ports {rgmii1_rxd[3]}]
+set_property PACKAGE_PIN C18 [get_ports {rgmii1_rxd[2]}]
+set_property PACKAGE_PIN B18 [get_ports {rgmii1_rxd[1]}]
+set_property PACKAGE_PIN A16 [get_ports {rgmii1_rxd[0]}]
+set_property PACKAGE_PIN A18 [get_ports {rgmii1_txd[3]}]
+set_property PACKAGE_PIN A19 [get_ports {rgmii1_txd[2]}]
+set_property PACKAGE_PIN D20 [get_ports {rgmii1_txd[1]}]
+set_property PACKAGE_PIN C20 [get_ports {rgmii1_txd[0]}]
+set_property PACKAGE_PIN B16 [get_ports e1_mdc]
+set_property PACKAGE_PIN B15 [get_ports e1_mdio]
+set_property PACKAGE_PIN D16 [get_ports e1_reset]
+set_property PACKAGE_PIN B17 [get_ports rgmii1_rxc]
+set_property PACKAGE_PIN A15 [get_ports rgmii1_rxctl]
+set_property PACKAGE_PIN E18 [get_ports rgmii1_txc]
+set_property PACKAGE_PIN F18 [get_ports rgmii1_txctl]
+
+
+
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]

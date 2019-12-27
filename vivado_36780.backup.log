@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov  9 12:10:54 2019
+# Process ID: 36780
+# Current directory: E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36004 E:\WorkSpace\project\FPGA\prj_ax7103\prj_ax7103\prj_ax7103.xpr
+# Log file: E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/vivado.log
+# Journal file: E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-748] XILINX_TCLAPP_REPO is set to 'D:/Xilinx/Vivado/2018.1/data/XilinxTclStore'. Refresh XilinxTclStore catalog is disabled when XILINX_TCLAPP_REPO is set.
+start_gui
+open_project E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 883.422 ; gain = 141.344
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ila_0 UUID: 23e7d65a-79bc-59f7-bc47-406c1714dfae 
+INFO: [Constraints 18-5114] Cannot read file, software build IDs are not compatible.
+  File : E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.runs/impl_1/top_routed/top.xbdc
+Parsing XDC File [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.runs/impl_1/top_routed/top_early.xdc]
+Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.runs/impl_1/top_routed/top_early.xdc]
+Parsing XDC File [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.runs/impl_1/top_routed/top.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/workspace/project/prj_ax7103/prj_ax7103/prj_ax7103.runs/impl_1/.Xil/Vivado-39060-DESKTOP-GEE1RG6/dbg_hub_CV.0/out/xsdbm.xdc:9]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1805.000 ; gain = 567.535
+Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.runs/impl_1/top_routed/top.xdc]
+Parsing XDC File [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.runs/impl_1/top_routed/top_late.xdc]
+Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_ax7103/prj_ax7103/prj_ax7103.runs/impl_1/top_routed/top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.387 . Memory (MB): peak = 1809.816 ; gain = 4.688
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.387 . Memory (MB): peak = 1809.816 ; gain = 4.688
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 78 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 72 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 1835.297 ; gain = 943.672
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+set_property IOSTANDARD DIFF_SSTL15 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL15 [get_ports [list sys_clk_p]]
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  9 17:30:59 2019...
